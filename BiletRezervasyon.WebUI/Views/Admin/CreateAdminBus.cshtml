@@ -1,0 +1,36 @@
+﻿@model BusModel
+
+<div class="container">
+<h1>Create a New Bus</h1>
+<hr>
+
+<center>
+<div class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title"></h5>
+    <h6 class="card-subtitle mb-2 text-muted"></h6>
+    <form asp-action="CreateAdminBus" asp-controller="Admin">
+            <div class=" border border">
+            <label  class="control-label">BusPlaque:</label> 
+            <input asp-for="BusPlaque" class="mb-2" type="text">
+                    <span asp-validation-for="BusPlaque" class="text-danger"></span>
+            </div>
+            <div class=" border border">
+            <label class="control-label">Driver Full Name:</label> 
+            <input asp-for="BusDriverFullName"  class="mb-4" type="text">
+                    <span asp-validation-for="BusDriverFullName" class="text-danger"></span>
+
+            </div>
+            <div class=" border border">
+            <label class="control-label">Capacity:</label>
+            <input asp-for="BusSeatCapacity" class="mb-4" type="text">
+                    <span asp-validation-for="BusSeatCapacity" class="text-danger"></span>
+            </div>
+            <center>
+            <button class="most-Button btn btn-outline-primary my-4" style="margin-top: 30px;" type="submit">Submit</button> <br>
+            </center>
+    </form>
+  </div>
+</div>
+</center>
+</div>

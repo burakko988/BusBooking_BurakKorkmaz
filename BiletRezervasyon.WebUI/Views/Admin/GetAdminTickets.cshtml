@@ -1,0 +1,61 @@
+﻿@model List<Ticket>
+
+
+<div class="container shadow mt-5" style="text-align:center;">
+    <h6 class="display-5">Manage Ticket</h6>
+    
+    @foreach (var item in Model)
+   {
+       <table class="table table table-bordered shadow-sm">
+        <thead>
+            <tr>
+                <th style="width:40px;">Pnr No</th>
+                <th style="width:200px;">Name - Surname</th>
+                <th style="">Mail</th>
+                <th style="width:105px;">Boarding Point</th>
+                <th style="width:105px;">Destination</th>
+                <th style="width:105px;">Phone Number</th>
+                <th style="width:105px;">Gender</th>
+                <th style="width:105px;">Identity</th>
+                <th style="width:60px;">Seat No</th>
+                <th style="width:60px;">Route Id</th>
+                <th style="width:60px;">Bus Id</th>
+                <th style="width:80px;">Delete Button</th>
+                
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@item.PnrNo</td>
+                <td>@item.PassengerFirstName @item.PassgerLastName</td>
+
+                <td>@item.PassengerMail</td>
+                <td>@item.BoardingPoint</td>
+                <td>@item.Destination</td>
+                <td>@item.PassengerPhone</td>
+                <td>@item.PassengerGender</td>
+                <td>@item.PassengerIdentity</td>
+                <td>@item.SeatNo</td>
+                <td>@item.RouteId</td>
+                <td>@item.BusId</td>
+                <td>
+                   <form asp-action="DeleteAdminTicket" method="post" class="d-inline">
+                                <input type="hidden" name="ticketId" value="@item.TicketId" />
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
+                </td>
+                
+                
+                
+
+            </tr>
+        </tbody>
+    </table>
+   }
+    
+    
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Return Home</a>
+</div>

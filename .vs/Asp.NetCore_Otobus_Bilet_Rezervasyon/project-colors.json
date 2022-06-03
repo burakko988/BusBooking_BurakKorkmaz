@@ -1,0 +1,31 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3ff35988-25e9-4891-9467-5fe2431e9336": {
+      "ProjectGuid": "3ff35988-25e9-4891-9467-5fe2431e9336",
+      "DisplayName": "BiletRezervasyon.WebUI",
+      "ColorIndex": 0
+    },
+    "a05ba338-7ef1-4ef3-9abe-df87690eef87": {
+      "ProjectGuid": "a05ba338-7ef1-4ef3-9abe-df87690eef87",
+      "DisplayName": "BiletRezervasyon.Data",
+      "ColorIndex": 1
+    },
+    "8094183f-15ef-48cc-b23a-11137a69dae4": {
+      "ProjectGuid": "8094183f-15ef-48cc-b23a-11137a69dae4",
+      "DisplayName": "BiletRezervasyon.Business",
+      "ColorIndex": 2
+    },
+    "06ca1239-e94d-46f1-88ef-c30b55d7159f": {
+      "ProjectGuid": "06ca1239-e94d-46f1-88ef-c30b55d7159f",
+      "DisplayName": "BiletRezervasyon.Entities",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 4
+}

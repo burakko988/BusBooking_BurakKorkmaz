@@ -1,0 +1,115 @@
+﻿@*@model List<Route>
+<div class="container">
+    <a class="btn btn-sm btn-outline-primary my-3" asp-action="CreateAdminRoute">Create New Route</a>
+    <table class="table table-xs table-bordered table-hover">
+        <thead>
+            <tr>
+                <td>First Terminal</td>
+                <td>1. Station</td>
+                <td>2. Station*</td>
+                <td>3. Station*</td>
+                <td>4. Station*</td>
+                <td>5. Station*</td>
+                <td>Last Terminal</td>
+                <td>Route Date</td>
+                <td>Route Hour</td>
+                <td>Route Price</td> 
+                <td>Bus</td>
+                <td>Transactions</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var route in Model)
+            {
+            <tr>
+                <td>@route.FirstTerminal</td> 
+                <td>@route.Terminal1</td>
+                <td>@route.Terminal2</td>
+                <td>@route.Terminal3</td>
+                <td>@route.Terminal4</td>
+                <td>@route.Terminal5</td>
+                <td>@route.LastTerminal</td>
+                <td>@route.Date</td>
+                <td>@route.Hour</td>
+                <td>@route.Price</td>
+                <td>@route.BusId</td>
+                <td>
+                    <form action="DeleteAdminRoute" method="post" class="d-inline">
+                        <input type="hidden" name="routeId" value="@route.RouteId" />
+                        <button type="submit" class="btn btn-danger">Sil</button>
+                    </form>
+                </td>
+            </tr>
+            }
+
+        </tbody>
+    </table>
+    <p>* Opsiyonel.</p>
+</div>*@
+
+
+
+@model List<Route>
+
+<div class="container shadow mt-5" style="text-align:center;">
+    <h6 class="display-5">Manage Routes</h6>
+    <a asp-action="CreateAdminRoute" asp-controller="Admin" class="most-Button btn btn-primary my-2">Create a New Route</a>
+
+    @foreach (var item in Model)
+    {
+        <table class="table table table-bordered shadow-sm">
+            <thead>
+                <tr>
+                    <th style="width:30px;">Route ID</th>
+                    <th style="width:30px;">First Terminal</th>
+                    <th style="width:105px;">Terminal1</th>
+                    <th style="width:60px;">Terminal2</th>
+                    <th style="width:60px;">Terminal3</th>
+                    <th style="width:60px;">Terminal4</th>
+                    <th style="width:60px;">Terminal5</th>
+                    <th style="width:60px;">Last Terminal</th>
+                    <th style="width:80px;">Date</th>
+                    <th style="width:80px;">Hour</th>
+                    <th style="width:80px;">Price</th>
+                    <th style="width:80px;">Bus Id</th>
+                    <th style="width:80px;">Transactions</th>
+                 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@item.RouteId</td>
+                    <td>@item.FirstTerminal</td>
+                    <td>@item.Terminal1 </td>
+                    <td>@item.Terminal2</td>
+                    <td>@item.Terminal3</td>
+                    <td>@item.Terminal4</td>
+                    <td>@item.Terminal5</td>
+                    <td>@item.LastTerminal</td>
+                    <td>@item.Date</td>
+                    <td>@item.Hour</td>
+                    <td>@item.Price</td>
+                    <td>@item.BusId</td>
+
+                    <td>
+                        <form asp-action="DeleteAdminRoute" asp-controller="admin" method="post" class="d-inline">
+                            <input type="hidden" name="routeId" value="@item.RouteId" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                        
+                        
+                    </td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    }
+
+
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Return Home</a>
+</div>
+    

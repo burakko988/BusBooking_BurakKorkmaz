@@ -1,0 +1,63 @@
+﻿@model List<City>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    <form class="row my-3 col-md-8 ms-2" asp-action="FindRoute" asp-controller="Ticket">
+        <div class="card text-center">
+            <div class="card-header">
+                Book the ticket
+            </div>
+            <div class="card-body">
+                <div class="row ">
+                    <h5 class="card-title col-md-3">Boarding Point</h5>
+                    <select name="startCity" class=" col-md-8">
+                        @foreach (var item in Model)
+                        {
+                            <option class="form-control">@item.CityName</option>
+
+                        }
+                    </select>
+                </div>
+                <div class="row mt-2">
+                    <h5 class="card-title col-md-3">Destination</h5>
+                    <select name="endCity" class="col-md-8">
+                        @foreach (var item in Model)
+                        {
+                            <option class="form-control">@item.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="row">
+                    <input type="date" class="col-md-5 ms-5  mt-2" name="routeDate" />
+                    <button class="btn  btn-primary col-md-5 ms-2 mt-2" type="submit">Search</button>
+                </div>
+
+            </div>
+
+        </div>
+    </form>
+
+
+    <form asp-action="Search" asp-controller="Ticket" class="my-3 col-md-4">
+        <div class="card text-center">
+            <div class="card-header ">
+                Find Your Ticket
+            </div>
+            <div class="card-body">
+                <label for="validationCustom03" class="visually-hidden form-control">asdf</label>
+                <input type="text" name="searchString" class="form-control my-3" placeholder="Please enter PNR " id="validationCustom03" required/>
+                <label for="validationCustom03" class="visually-hidden form-control">asdf</label>
+                <input type="text" name="searchStringg" class="form-control mb-3" placeholder="Please enter your Phone Number" for="validationCustom03" required/>
+                <button type="submit" class="btn btn-sm btn-danger w-100">Search</button>
+            </div>
+
+        </div>
+
+    </form>
+    <partial name="_Slider" />
+
+
+</div>

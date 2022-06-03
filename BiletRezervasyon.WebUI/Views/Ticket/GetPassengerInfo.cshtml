@@ -1,0 +1,97 @@
+﻿@model Ticket
+<div class="container">
+<div class="card mt-3">
+  <h5 class="card-header text-center">Ticket Information</h5>
+  <center>
+  <div class="card-body col-12 center">
+    <form class="row gy-2 gx-3 align-items-center my-4 d-flex justify-content-around needs-validation" asp-controller="Ticket" asp-action="CreateTicket">
+    <input type="hidden" asp-for="TicketId">
+    <input type="hidden" asp-for="BusId">
+    <input type="hidden" asp-for="RouteId">
+    <input type="hidden" asp-for="SeatNo">
+    <input type="hidden" asp-for="BoardingPoint">
+    <input type="hidden" asp-for="Destination">
+    <input type="hidden" asp-for="PnrNo" value="@ViewBag.pnr" >
+    <label>@ViewBag.route</label>
+    <label>@ViewBag.busId</label>
+    <div class="col-auto">
+        <label class="control-label" for="validationCustom01">Name:</label>
+        <input type="text" id="validationCustom01" class="form-control" placeholder="Enter Name." asp-for="PassengerFirstName" required>
+       
+    </div>
+    <div class="col-auto">
+        <label class="control-label" for="validationCustom01">Surname:</label>
+        <input type="text" id="validationCustom01" class="form-control" placeholder="Enter Surname." asp-for="PassgerLastName" required>
+        
+    </div>
+     <div class="col-auto">
+        <label class="control-label" for="validationCustom01">Ad:</label>
+        <input type="text" id="validationCustom01" class="form-control" placeholder="Enter PhoneNumber." asp-for="PassengerPhone" required>
+        
+    </div>
+     <div class="col-auto">
+        <label class="control-label" for="validationCustom01">Identity:</label>
+        <input type="text" id="validationCustom01" class="form-control" placeholder="Enter Name." asp-for="PassengerIdentity" required>
+        
+    </div>
+    <div class="col-auto">
+        <label class="control-label">Cinsiyet:</label>
+        <select class="form-select" asp-for="PassengerGender">
+            <option value="Kadın">Kadın</option>
+            <option value="Erkek">Erkek</option>
+        </select>
+    </div>
+    <div class="col-auto">
+        <label class="control-label">Mail:</label>
+        <input type="email" class="form-control" placeholder="Enter Mail Adress." asp-for="PassengerMail">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Book this seat!!</button>
+    </div>
+</form>
+  </div>
+  </center>
+</div> 
+
+</div>
+
+
+
+@*<form class="row gy-2 gx-3 align-items-center my-4 d-flex justify-content-around" asp-controller="Ticket" asp-action="CreateTicket">
+    <input type="hidden" asp-for="TicketId">
+    <input type="hidden" asp-for="BusId" value="@ViewBag.busId">
+    <input type="hidden" asp-for="RouteId" value="@ViewBag.routeId">
+    <input type="hidden" asp-for="SeatNo" value="@ViewBag.seatNo">
+    <input type="hidden" asp-for="BoardingPoint" value="@ViewBag.fromWhere">
+    <input type="hidden" asp-for="Destination" value="@ViewBag.toWhere">
+    <div class="col-auto">
+        <label class="control-label">Ad:</label>
+        <input type="text" class="form-control" placeholder="Enter Name." asp-for="PassengerFirstName">
+    </div>
+    <div class="col-auto">
+        <label class="control-label">Soyad:</label>
+        <input type="text" class="form-control" placeholder="Enter Surname" asp-for="PassgerLastName">
+    </div>
+     <div class="col-auto">
+        <label class="control-label">Phone:</label>
+        <input type="text" class="form-control" placeholder="Enter Phone Number." asp-for="PassengerPhone">
+    </div>
+     <div class="col-auto">
+        <label class="control-label">Identity Number:</label>
+        <input type="text" class="form-control" placeholder="Enter Identity" asp-for="PassengerIdentity">
+    </div>
+    <div class="col-auto">
+        <label class="control-label">Cinsiyet:</label>
+        <select class="form-select" asp-for="PassengerGender">
+            <option value="Kadın">Kadın</option>
+            <option value="Erkek">Erkek</option>
+        </select>
+    </div>
+    <div class="col-auto">
+        <label class="control-label">Mail:</label>
+        <input type="text" class="form-control" placeholder="Mail Adresinizi Giriniz." asp-for="PassengerMail">
+    </div>
+    <div class="col-auto">
+        <button type="submit" class="btn btn-primary">Book this seat!!</button>
+    </div>
+</form>*@

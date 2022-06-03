@@ -1,0 +1,128 @@
+﻿@model Route
+<div class="container">
+
+    <h5 class="display-4 text-center">New Route</h5>
+    <p class="text-center">* Cannot be Null .</p>
+
+    <hr />
+    <form type="submit" asp-action="CreateAdminRoute" asp-controller="Admin">
+        <div class="row">
+            <div class="col-md-5 ms-5">
+                <div class="form-group m-2">
+                    <label for="validationDefault04" class="col-form-label">First Terminal*</label>
+                    <select class="form-select" id="validationDefault04" asp-for="FirstTerminal" required>
+                        <option selected disabled value=""></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+
+                </div>
+                <div class="form-group m-2">
+                    <label for="validationDefault04" class="col-form-label">Terminal1*</label>
+                    <select class="form-select" id="validationDefault04" asp-for="Terminal1" required>
+                        <option selected disabled value=""></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group m-2">
+                    <label class="col-form-label">Terminal 2</label>
+                    <select class="form-select" asp-for="Terminal2">
+                        <option selected disabled></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group m-2">
+                    <label class="col-form-label">Terminal 3</label>
+                    <select class="form-select" asp-for="Terminal3">
+                        <option selected disabled></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group m-2">
+                    <label class="col-form-label">Terminal 4</label>
+                    <select class="form-select" asp-for="Terminal4">
+                        <option selected disabled></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group m-2">
+                    <label class="col-form-label">Terminal 5</label>
+                    <select class="form-select" asp-for="Terminal5">
+                        <option selected disabled></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+                <div class="form-group m-2">
+                    <label for="validationDefault04" class="col-form-label">Last Terminal*</label>
+                    <select class="form-select" id="validationDefault04" asp-for="LastTerminal" required>
+                        <option selected disabled></option>
+                        @foreach (var city in ViewBag.Cities)
+                        {
+                            <option value="@city.CityName">@city.CityName</option>
+                        }
+                    </select>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-5 mt-3">
+                <div class="form-group m-2 row">
+                    <div class="col-md-3">
+                    <label class="col-form-label" for="validationDefault01">Route Date*:</label>
+                    <input class="" id="validationDefault01" type="date" asp-for="Date"  required/>
+                    </div>
+                </div>
+                <div class="form-group m-2 row">
+                    <div class="col-md-3">
+                        <label for="validationDefault01" class="col-form-label">Route Hour*:</label>
+                    
+                    <input id="validationDefault01" type="time" asp-for="Hour"  required/>
+                    </div>
+                </div>
+                <div class="input-group m-2 row">
+                    <div class="col-md-3">
+                        <label for="validationDefault01" class="col-form-label">Route Price* :</label>
+                    
+                        <input id="validationDefault01" type="number" asp-for="Price"  required/>
+                    </div>
+                    
+                </div>
+              
+                <div class="ms-3">
+                <label for="validationDefault04" class="col-form-label">Bus Plaque*</label>
+                    <select class="form-select" id="validationDefault04" asp-for="BusId" required>
+                        <option selected disabled></option>
+                        @foreach (var bus in ViewBag.busId)
+                        {
+                            <option value="@bus.BusId">@bus.BusPlaque</option>
+                        }
+                    </select>
+                    </div>
+               
+
+            </div>
+        </div>
+        <center>
+        <button class="btn btn-primary btn-lg"  type="submit">Submit</button>
+
+        </center>
+    </form>
+</div>

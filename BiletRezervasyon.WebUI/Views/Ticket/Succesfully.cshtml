@@ -1,0 +1,49 @@
+﻿@model RouteTicketModel
+
+
+<div class="container shadow mt-5" style="text-align:center;">
+    <br />
+    <i class="fas fa-check-circle" style="font-size:36px; color:green;"></i><br />
+    <br /><p> Dear @Model.Ticket.PassengerFirstName @Model.Ticket.PassgerLastName, @Model.Ticket.BoardingPoint -> @Model.Ticket.Destination for ticket has been succesful to reservation.</p> <br />
+    
+    <br /><hr /><br />
+    <h3>Ticket Details</h3><br />
+    
+    <table class="table table table-bordered shadow-sm">
+        <thead>
+            <tr>
+                <th style="width:40px;">Pnr No</th>
+                <th style="width:200px;">Name - Surname</th>
+                <th style="">Mail</th>
+                <th style="">Phone</th>
+                <th style="width:105px;">Boarding Point</th>
+                <th style="width:105px;">Destination</th>
+                <th style="width:60px;">Seat No</th>
+                <th style="width:80px;">Price</th>
+                <th style="width:100px;">Date </th>
+                <th style="width:80px;">Hour</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Ticket.PnrNo</td>
+                <td>@Model.Ticket.PassengerFirstName @Model.Ticket.PassgerLastName</td>
+
+                <td>@Model.Ticket.PassengerMail</td>
+                <td>@Model.Ticket.PassengerPhone</td>
+                <td>@Model.Ticket.BoardingPoint</td>
+                <td>@Model.Ticket.Destination</td>
+                <td>@Model.Ticket.SeatNo</td>
+                <td>@Model.Price ₺</td>
+                <td>@Model.Date</td>
+                <td>@Model.Hour</td>
+                
+
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Return Home</a>
+</div>

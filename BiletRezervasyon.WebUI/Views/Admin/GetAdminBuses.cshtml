@@ -1,0 +1,47 @@
+﻿@model List<Bus>
+
+<div class="container shadow mt-5" style="text-align:center;">
+    <h6 class="display-5">Manage Buses</h6>
+    <a asp-action="CreateAdminBus" asp-controller="Admin" class="most-Button btn btn-primary my-2">Create a New Bus</a>
+
+    @foreach (var item in Model)
+    {
+        <table class="table table table-bordered shadow-sm">
+            <thead>
+                <tr>
+                    <th style="width:30px;">Bus Id</th>
+                    <th style="width:105px;">Bus Plaque</th>
+                    <th style="width:60px;">Bus Seat Capacity</th>
+                    <th style="width:60px;">Bus Driver Full Name</th>
+                    <th style="width:80px;">Transactions</th>
+                 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@item.BusId</td>
+                    <td>@item.BusPlaque</td>
+                    <td>@item.BusSeatCapacity </td>
+                    <td>@item.BusDriverFullName</td>
+
+                    <td>
+                        <form asp-action="DeleteAdminBuses" method="post" class="d-inline">
+                            <input type="hidden" name="busId" value="@item.BusId" />
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
+                        
+                        
+                    </td>
+
+
+
+
+                </tr>
+            </tbody>
+        </table>
+    }
+
+
+    <br />
+    <a asp-action="Index" asp-controller="Home" class="btn btn-primary mb-3">Return Home</a>
+</div>

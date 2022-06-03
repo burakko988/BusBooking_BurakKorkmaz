@@ -1,0 +1,52 @@
+﻿@model Ticket
+<div class="container">
+    <h3 class="text-center">Ticket Details</h3><br />
+    <hr />
+    <table class="table table table-bordered shadow-sm">
+        <thead>
+            <tr>
+                <th style="width:40px;">Pnr No</th>
+                <th style="width:200px;">Name - Surname</th>
+                <th style="">Mail</th>
+                <th style="">Phone</th>
+                <th style="">Identity</th>
+                <th style="">Gender</th>
+                <th style="width:105px;">Boarding Point</th>
+                <th style="width:105px;">Destination</th>
+                <th style="width:60px;">Seat No</th>
+                <th style="width:80px;">Delete</th>
+                
+
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.PnrNo</td>
+                <td>@Model.PassengerFirstName @Model.PassgerLastName</td>
+
+                <td>@Model.PassengerMail</td>
+                <td>@Model.PassengerPhone</td>
+                <td>@Model.PassengerIdentity</td>
+                <td>@Model.PassengerGender</td>
+                <td>@Model.BoardingPoint</td>
+                <td>@Model.Destination</td>
+                <td>@Model.SeatNo</td>
+                <td>
+                    <form asp-action="TicketDelete" method="post" class="d-inline">
+                                <input type="hidden" name="ticketId" value="@Model.TicketId" />
+                                <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                            </form>
+                </td>
+                
+
+                
+
+            </tr>
+        </tbody>
+    </table>
+    <center>
+    <img src="https://sc04.alicdn.com/kf/UTB8VHyqoL2JXKJkSanr7613lVXaw.png"  style="width:700px; height:700px; " />
+    </center>
+</div>
+    
+  
