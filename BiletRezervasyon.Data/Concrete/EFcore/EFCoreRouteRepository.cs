@@ -14,32 +14,31 @@ namespace BiletRezervasyon.Data.Concrete.EFcore
 
         public List<Route> FindRoute(string startCity, string endCity, DateTime routeDate)
         {
-            startCity = startCity.ToLower();
-            endCity = endCity.ToLower();
+            
             string fakeRouteDate = routeDate.ToString("yyyy-MM-dd");
             using (var context = new BookingContext())
             {
-                var routes = context.Routes.Where(i => i.Date.Contains(fakeRouteDate) && (i.FirstTerminal.ToLower().Contains(startCity) &&
-                ((i.Terminal1.ToLower().Contains(endCity) ||
-                i.Terminal2.ToLower().Contains(endCity) || i.Terminal3.ToLower().Contains(endCity) ||
-                i.Terminal4.ToLower().Contains(endCity) || i.Terminal5.ToLower().Contains(endCity) ||
-                i.Terminal5.ToLower().Contains(endCity) || i.LastTerminal.ToLower().Contains(endCity))) ||
+                var routes = context.Routes.Where(i => i.Date.Contains(fakeRouteDate) && (i.FirstTerminal.Contains(startCity) &&
+                ((i.Terminal1.Contains(endCity) ||
+                i.Terminal2.Contains(endCity) || i.Terminal3.Contains(endCity) ||
+                i.Terminal4.Contains(endCity) || i.Terminal5.Contains(endCity) ||
+                i.Terminal5.Contains(endCity) || i.LastTerminal.Contains(endCity))) ||
 
-                i.Terminal1.ToLower().Contains(startCity) && ((i.Terminal2.ToLower().Contains(endCity) ||
-                i.Terminal3.ToLower().Contains(endCity) || i.Terminal4.ToLower().Contains(endCity) ||
-                i.Terminal5.ToLower().Contains(endCity) || i.LastTerminal.ToLower().Contains(endCity))) ||
+                i.Terminal1.Contains(startCity) && ((i.Terminal2.Contains(endCity) ||
+                i.Terminal3.Contains(endCity) || i.Terminal4.Contains(endCity) ||
+                i.Terminal5.Contains(endCity) || i.LastTerminal.Contains(endCity))) ||
 
-                i.Terminal2.ToLower().Contains(startCity) && ((i.Terminal3.ToLower().Contains(endCity) ||
-                i.Terminal4.ToLower().Contains(endCity) || i.Terminal5.ToLower().Contains(endCity) ||
-                i.LastTerminal.ToLower().Contains(endCity))) ||
+                i.Terminal2.Contains(startCity) && ((i.Terminal3.Contains(endCity) ||
+                i.Terminal4.Contains(endCity) || i.Terminal5.Contains(endCity) ||
+                i.LastTerminal.Contains(endCity))) ||
 
-                i.Terminal3.ToLower().Contains(startCity) && ((i.Terminal4.ToLower().Contains(endCity) ||
-                i.Terminal5.ToLower().Contains(endCity) || i.LastTerminal.ToLower().Contains(endCity))) ||
+                i.Terminal3.Contains(startCity) && ((i.Terminal4.Contains(endCity) ||
+                i.Terminal5.Contains(endCity) || i.LastTerminal.Contains(endCity))) ||
 
-                i.Terminal4.ToLower().Contains(startCity) && ((i.Terminal5.ToLower().Contains(endCity) ||
-                i.LastTerminal.ToLower().Contains(endCity))) ||
+                i.Terminal4.Contains(startCity) && ((i.Terminal5.Contains(endCity) ||
+                i.LastTerminal.Contains(endCity))) ||
 
-                i.Terminal5.ToLower().Contains(startCity) && (i.LastTerminal.ToLower().Contains((endCity)))))
+                i.Terminal5.Contains(startCity) && (i.LastTerminal.Contains((endCity)))))
                     .Include(c => c.Bus)
                     .ToList();
 

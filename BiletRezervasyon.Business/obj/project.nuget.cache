@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "j6PLlDBjEiWBPaWgvpREn5ncgplrYRSTWiOCpnih/p37sbNiUrwyrn/NzT3zb1FC9YCjItA5/gtaq/fAfcK5fA==",
+  "dgSpecHash": "cFLa4f2wwBjb9gLD43QDBvcqY016QZ+8J93P2mWg2MyVbJb3uw7TNjLnEWlBVkllc+7kDLE0myhGsTgzIAVvpA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
+  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korkk\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.16\\microsoft.data.sqlite.core.5.0.16.nupkg.sha512",
     "C:\\Users\\korkk\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\BiletRezervasyon.WebUI.csproj": {}
+    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\BiletRezervasyon.WebUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj": {
+    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
+        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
         "projectName": "BiletRezervasyon.Business",
-        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
+        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj",
         "packagesPath": "C:\\Users\\korkk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\obj\\",
+        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -32,11 +32,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
-                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj"
+              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
+                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj"
               },
-              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
-                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj"
+              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
+                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
+    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
+        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
         "projectName": "BiletRezervasyon.Data",
-        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
+        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
         "packagesPath": "C:\\Users\\korkk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\obj\\",
+        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,8 +97,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
-                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj"
+              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
+                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj"
               }
             }
           }
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
+    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
         "projectName": "BiletRezervasyon.Entities",
-        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
+        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
         "packagesPath": "C:\\Users\\korkk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\obj\\",
+        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -205,14 +205,14 @@
         }
       }
     },
-    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\BiletRezervasyon.WebUI.csproj": {
+    "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\BiletRezervasyon.WebUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\BiletRezervasyon.WebUI.csproj",
+        "projectUniqueName": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\BiletRezervasyon.WebUI.csproj",
         "projectName": "BiletRezervasyon.WebUI",
-        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\BiletRezervasyon.WebUI.csproj",
+        "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\BiletRezervasyon.WebUI.csproj",
         "packagesPath": "C:\\Users\\korkk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\obj\\",
+        "outputPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -233,11 +233,11 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj": {
-                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj"
+              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj": {
+                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Business\\BiletRezervasyon.Business.csproj"
               },
-              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
-                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj"
+              "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj": {
+                "projectPath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj"
               }
             }
           }

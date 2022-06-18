@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "irYbRNkuAGqKbGJ91QKWyLe8Z/KcNp9z7ahGdvoI9JzGNOAE9DCloHOV5w1ImdtvCwJA6ImQwNFwNX4bqE++kg==",
+  "dgSpecHash": "0dLxEtc6IdfF7NGqN5XoeWxejB3huD5k3dQ4q8eM92vt90SEblqx9EEXtlZ9Y13SQIoAr4Xh3i2I1k8jPk8dKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
+  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Entities\\BiletRezervasyon.Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -2,81 +2,72 @@
 
 
 <center>
-<h3>Choose Your Seat</h3>
-<h3>Boarding Point: @ViewBag.From</h3>
-<h3>Destination: @ViewBag.toWhere</h3>
-<div class="seat-row ">
-    <ul class="d-flex">
-        <li class="seat-info m-1 d-flex">
-            <div class="seat selected-woman seat-pre"></div>
-            <div class="ms-3">
-                <p>Woman Full</p>
-                <p>Seat</p>
-            </div>
-        </li>
-        <li class="seat-info m-1 d-flex">
-            <div class="seat selected-man seat-pre"></div>
-            <div class="ms-3">
-                <p>Man Full</p>
-                <p>Seat</p>
-            </div>
-        </li>
-        <li class="seat-info m-1 d-flex">
-            <div class="seat empty-seat seat-pre"></div>
-            <div class="ms-3">
-                <p>Empty Seat</p>
-                <p>Purchasable</p>
-            </div>
-        </li>
-    </ul>
-</div>
-<form asp-controller="Ticket" asp-action="GetPassengerInfo">
-    <div class="seat-row   parent border">
-        @for (int i = 1; i <=  ViewBag.seatCapacity; i++)
-        {
-            @foreach (var item in Model)
+    <h3>Choose Your Seat</h3>
+    <h3>Boarding Point: @ViewBag.From</h3>
+    <h3>Destination: @ViewBag.toWhere</h3>
+    <div class="seat-row ">
+        <ul class="d-flex">
+            <li class="seat-info m-1 d-flex">
+                <div class="seat selected-woman seat-pre"></div>
+                <div class="ms-3">
+                    <p>Woman Full</p>
+                    <p>Seat</p>
+                </div>
+            </li>
+            <li class="seat-info m-1 d-flex">
+                <div class="seat selected-man seat-pre"></div>
+                <div class="ms-3">
+                    <p>Man Full</p>
+                    <p>Seat</p>
+                </div>
+            </li>
+            <li class="seat-info m-1 d-flex">
+                <div class="seat empty-seat seat-pre"></div>
+                <div class="ms-3">
+                    <p>Empty Seat</p>
+                    <p>Purchasable</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <form asp-controller="Ticket" asp-action="GetPassengerInfo">
+        <div class="seat-row  parent border">
+            @for (int i = 1; i <= ViewBag.seatCapacity; i++)
             {
-                List<int> SelectedSeats = new List<int>();
-                if (i == item.SeatNo)
+                int count = 1;
+                int temporaryCount = 0;
+                @foreach (var item in Model)
                 {
-                    SelectedSeats.Add(i);
-
-                    foreach (var seat in SelectedSeats)
+                    if (i == item.SeatNo)
                     {
-                        for (int j = 1; j <= i; j++)
+                        @if (item.PassengerGender == "Erkek")
                         {
-                            if (j == seat)
-                            {
-                                @if (item.PassengerGender == "Erkek")
-                                {
-                                    <div class="seat selected-man child">@j</div>
-
-                                }
-                                else if (item.PassengerGender == "Kadın") 
-                                {
-                                    <div class="seat selected-woman child">@j</div>
-
-                                }
-                                i++;
-                            }
+                            <button type="submit" class="seat selected-man child" value="@i" name="seatNo" disabled>@i</button>
+                            temporaryCount++;
+                        }
+                        else if (item.PassengerGender == "Kadın")
+                        {
+                            <button type="submit" class="seat selected-woman child" value="@i" name="seatNo" disabled>@i</button>
+                            temporaryCount++;
                         }
                     }
-
                 }
-                
-                
+                @if (temporaryCount >= count)
+                {
+                    count = temporaryCount;
+                }
+                else
+                {
+                    <button type="submit" class="seat child" value="@i" name="seatNo">@i</button>
+                }
             }
-           
-            <button type="submit" class="seat child" value="@i" name="seatNo">@i</button>
-        }
-    </div>
+        </div>
+        <input type="hidden" name="busId" value="@ViewBag.busId" />
+        <input type="hidden" name="routeId" value="@ViewBag.route" />
+        <input type="hidden" name="startCity" value="@ViewBag.From" />
+        <input type="hidden" name="endCity" value="@ViewBag.toWhere" />
 
-                <input type="hidden" name="busId" value="@ViewBag.busId" />
-                <input type="hidden" name="routeId" value="@ViewBag.route" />
-                <input type="hidden" name="startCity" value="@ViewBag.From" />  
-                <input type="hidden" name="endCity" value="@ViewBag.toWhere" />
-
-</form>
+    </form>
 
 
 

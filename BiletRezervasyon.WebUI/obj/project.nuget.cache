@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C82d6igonWorMi06XA87R1Hi2tYLXJXnHIuKwWWJnAtyZZh6Is9XDWgVkw31+F1idWwvieEcsTzDtVj02JTqAw==",
+  "dgSpecHash": "3IlFdmJ7Bb9tU5JhmW/hp8AFiNaORPAhkAqk+EwLuEfWOT4VdhByh/nwT97SIY1wyjir+XngkWtoIlLef0hSNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.WebUI\\BiletRezervasyon.WebUI.csproj",
+  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\biletrezervasyon.webui\\BiletRezervasyon.WebUI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korkk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\korkk\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\2.2.0\\microsoft.aspnetcore.cryptography.internal.2.2.0.nupkg.sha512",

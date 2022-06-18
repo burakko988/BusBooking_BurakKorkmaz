@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8op3geq2AHTOssOR/IzYnNeFXFDFuaSsL7dikl7cJE2ScE/Lz5lAXupULKvfHE5gSE+gwLLyctFT/iQKMP5vuA==",
+  "dgSpecHash": "GXeXo422NMNTHtqMnHRzic47fO5Fvhb13L9yZWe0VcU5bAHWfDvQ3VqpTSvEWO1bxSTkrVI2U0IR9zIe7TAEPQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\Asp.NetCore_Otobus_Bilet_Rezervasyon\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
+  "projectFilePath": "C:\\Users\\korkk\\OneDrive\\Masaüstü\\BusBooking_BurakKorkmaz\\BiletRezervasyon.Data\\BiletRezervasyon.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\korkk\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\korkk\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
