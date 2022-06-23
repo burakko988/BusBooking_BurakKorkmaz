@@ -71,10 +71,13 @@ namespace BiletRezervasyon.WebUI.Controllers
         [HttpPost]
         public IActionResult CreateTicket(Ticket ticket)
         {
+            if (ModelState.IsValid)
+            {
+                _ticketService.Create(ticket);
+                return RedirectToAction("Succesfully");
 
-
-            _ticketService.Create(ticket);
-            return RedirectToAction("Succesfully");
+            }
+            return View(ticket);
         }
 
         public IActionResult Succesfully()

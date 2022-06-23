@@ -2,182 +2,156 @@
 
 <div class="container">
     <h2 class="text-center display-4">Routes</h2>
-    
-    @if (Model.Count==0)
-   {
-       <h1>No results were found for the expedition you were looking for, <a href="#">please contact us.</a></h1>
-       <center>
-    <img src="https://sc04.alicdn.com/kf/UTB8VHyqoL2JXKJkSanr7613lVXaw.png"  style="width:700px; height:700px; " />
-    </center>
-   }
-   
-    <form asp-controller="Ticket" asp-action="GetTicketsFromRoute" >
-    @foreach (var item in Model)
+    @if (Model.Count == 0)
     {
-           
-           
-
-<div class="card text-center mt-4">
-            <div class="card-header">
-                @item.Date on @ViewBag.From to @ViewBag.toWhere
-            </div>
-            <div class="card-body">
-                <h5 class="card-title">Price:  <i class="fa-solid fa-turkish-lira-sign"> </i>@item.Price </h5>
-                <h5 class="card-title">Departure Time:@item.Hour</h5>
-                <input type="hidden" name="id" value="@item.RouteId"/>
-                <h5 class="card-title">Bus Driver: @item.Bus.BusDriverFullName</h5>
-                <h5 class="card-title">Bus Plaque: @item.Bus.BusPlaque</h5>
-                <h5 class="card-title">Bus Seat Capacity: @item.Bus.BusSeatCapacity</h5>
-                <div class="">
-                    <ul class="list-group list-group-horizontal d-flex justify-content-center border-none">
-
-                        <li class="list-group-item">
-
-                            @if (ViewBag.From == item.FirstTerminal)
-                            {
-                                <strong>@item.FirstTerminal => </strong>
-                              <input type="hidden" value="@item.FirstTerminal" name="startCity"/>
-
-                            }
-                            else
-                            {
-                                <p>@item.FirstTerminal => </p>
-                            }
-                        </li>
-
-                        @if (item.Terminal1 != null)
-                        {
-                            <li class="list-group-item">
-                                @if (ViewBag.From == item.Terminal1)
-                                {
-                                    <strong>@item.Terminal1 => </strong>
-                              <input type="hidden" value="@item.Terminal1" name="startCity"/>
-
-                                }
-                                else if (ViewBag.toWhere == item.Terminal1)
-                                {
-                                    <strong>@item.Terminal1 =></strong>
-                              <input type="hidden" value="@item.Terminal1" name="endCity"/>
-
-                                }
-                                else
-                                {
-                                    <p>@item.Terminal1 =></p>
-                                }
-                            </li>
-                        }
-                        @if (item.Terminal2 != null)
-                        {
-                            <li class="list-group-item">
-                                @if (ViewBag.From == item.Terminal2)
-                                {
-                                    <strong>@item.Terminal2 => </strong>
-                              <input type="hidden" value="@item.Terminal2" name="startCity"/>
-
-                                }
-                                else if (ViewBag.toWhere == item.Terminal2)
-                                {
-                                    <strong>@item.Terminal2 => </strong>
-                              <input type="hidden" value="@item.Terminal2" name="endCity"/>
-
-                                }
-                                else
-                                {
-                                    <p>@item.Terminal2 => </p>
-                                }
-                            </li>
-                        }
-                        @if (item.Terminal3 != null)
-                        {
-                            <li class="list-group-item">
-
-                                @if (ViewBag.From == item.Terminal3)
-                                {
-                                    <strong>@item.Terminal3 => </strong>
-                              <input type="hidden" value="@item.Terminal3" name="startCity"/>
-
-                                }
-                                else if (ViewBag.toWhere == item.Terminal3)
-                                {
-                                    <strong>@item.Terminal3 => </strong>
-                              <input type="hidden" value="@item.Terminal3" name="endCity"/>
-
-                                }
-                                else
-                                {
-                                    <p>@item.Terminal3 => </p>
-                                }
-                            </li>
-                        }
-                        @if (item.Terminal4 != null)
-                        {
-                            <li class="list-group-item">
-
-                                @if (ViewBag.From == item.Terminal4)
-                                {
-                                    <strong>@item.Terminal4 => </strong>
-                              <input type="hidden" value="@item.Terminal4" name="startCity"/>
-
-                                }
-                                else if (ViewBag.toWhere == item.Terminal4)
-                                {
-                                    <strong>@item.Terminal4 => </strong>
-                              <input type="hidden" value="@item.Terminal4" name="endCity"/>
-
-                                }
-                                else
-                                {
-                                    <p>@item.Terminal4 => </p>
-                                }
-                            </li>
-                        }
-                        @if (item.Terminal5 != null)
-                        {
-                            <li class="list-group-item">
-
-                                @if (ViewBag.From == item.Terminal5)
-                                {
-                                    <strong>@item.Terminal5 => </strong>
-                              <input type="hidden" value="@item.Terminal5" name="startCity"/>
-
-                                }
-                                else if (ViewBag.toWhere == item.Terminal5)
-                                {
-                                    <strong>@item.Terminal5 => </strong>
-                              <input type="hidden" value="@item.Terminal5" name="endCity"/>
-
-                                }
-                                else
-                                {
-                                    <p>@item.Terminal5 =></p>
-                                }
-                            </li>
-                        }
-                        <li class="list-group-item">
-                            @if (ViewBag.toWhere == item.LastTerminal)
-                            {
-                                <strong>@item.LastTerminal  </strong>
-                              <input type="hidden" value="@item.LastTerminal" name="endCity"/>
-
-                            }
-
-                            else
-                            {
-                                <p>@item.LastTerminal </p>
-                            }
-                        </li>
-                    </ul>
+        <h1>No results were found for the expedition you were looking for, <a href="#">please contact us.</a></h1>
+        <center>
+            <img src="https://sc04.alicdn.com/kf/UTB8VHyqoL2JXKJkSanr7613lVXaw.png" style="width:700px; height:700px; " />
+        </center>
+    }
+    <form asp-controller="Ticket" asp-action="GetTicketsFromRoute">
+        @foreach (var item in Model)
+        {
+            <div class="card text-center mt-4">
+                <div class="card-header">
+                    @item.Date on @ViewBag.From to @ViewBag.toWhere
                 </div>
+                <div class="card-body">
+                    <h5 class="card-title">Price:  <i class="fa-solid fa-turkish-lira-sign"> </i>@item.Price </h5>
+                    <h5 class="card-title">Departure Time:@item.Hour</h5>
+                    <input type="hidden" name="id" value="@item.RouteId" />
+                    <h5 class="card-title">Bus Driver: @item.Bus.BusDriverFullName</h5>
+                    <h5 class="card-title">Bus Plaque: @item.Bus.BusPlaque</h5>
+                    <h5 class="card-title">Bus Seat Capacity: @item.Bus.BusSeatCapacity</h5>
+                    <div class="">
+                        <ul class="list-group list-group-horizontal d-flex justify-content-center border-none">
 
-                
+                            <li class="list-group-item">
 
-                <button type="submit" class="btn btn-primary mt-3">Select Seat</button>
+                                @if (ViewBag.From == item.FirstTerminal)
+                                {
+                                    <strong>@item.FirstTerminal => </strong>
+                                    <input type="hidden" value="@item.FirstTerminal" name="startCity" />
+                                }
+                                else
+                                {
+                                    <p>@item.FirstTerminal => </p>
+                                }
+                            </li>
+                            @if (item.Terminal1 != null)
+                            {
+                                <li class="list-group-item">
+                                    @if (ViewBag.From == item.Terminal1)
+                                    {
+                                        <strong>@item.Terminal1 => </strong>
+                                        <input type="hidden" value="@item.Terminal1" name="startCity" />
+                                    }
+                                    else if (ViewBag.toWhere == item.Terminal1)
+                                    {
+                                        <strong>@item.Terminal1 =></strong>
+                                        <input type="hidden" value="@item.Terminal1" name="endCity" />
+                                    }
+                                    else
+                                    {
+                                        <p>@item.Terminal1 =></p>
+                                    }
+                                </li>
+                            }
+                            @if (item.Terminal2 != null)
+                            {
+                                <li class="list-group-item">
+                                    @if (ViewBag.From == item.Terminal2)
+                                    {
+                                        <strong>@item.Terminal2 => </strong>
+                                        <input type="hidden" value="@item.Terminal2" name="startCity" />
+                                    }
+                                    else if (ViewBag.toWhere == item.Terminal2)
+                                    {
+                                        <strong>@item.Terminal2 => </strong>
+                                        <input type="hidden" value="@item.Terminal2" name="endCity" />
+                                    }
+                                    else
+                                    {
+                                        <p>@item.Terminal2 => </p>
+                                    }
+                                </li>
+                            }
+                            @if (item.Terminal3 != null)
+                            {
+                                <li class="list-group-item">
+                                    @if (ViewBag.From == item.Terminal3)
+                                    {
+                                        <strong>@item.Terminal3 => </strong>
+                                        <input type="hidden" value="@item.Terminal3" name="startCity" />
+                                    }
+                                    else if (ViewBag.toWhere == item.Terminal3)
+                                    {
+                                        <strong>@item.Terminal3 => </strong>
+                                        <input type="hidden" value="@item.Terminal3" name="endCity" />
+                                    }
+                                    else
+                                    {
+                                        <p>@item.Terminal3 => </p>
+                                    }
+                                </li>
+                            }
+                            @if (item.Terminal4 != null)
+                            {
+                                <li class="list-group-item">
+
+                                    @if (ViewBag.From == item.Terminal4)
+                                    {
+                                        <strong>@item.Terminal4 => </strong>
+                                        <input type="hidden" value="@item.Terminal4" name="startCity" />
+                                    }
+                                    else if (ViewBag.toWhere == item.Terminal4)
+                                    {
+                                        <strong>@item.Terminal4 => </strong>
+                                        <input type="hidden" value="@item.Terminal4" name="endCity" />
+                                    }
+                                    else
+                                    {
+                                        <p>@item.Terminal4 => </p>
+                                    }
+                                </li>
+                            }
+                            @if (item.Terminal5 != null)
+                            {
+                                <li class="list-group-item">
+
+                                    @if (ViewBag.From == item.Terminal5)
+                                    {
+                                        <strong>@item.Terminal5 => </strong>
+                                        <input type="hidden" value="@item.Terminal5" name="startCity" />
+                                    }
+                                    else if (ViewBag.toWhere == item.Terminal5)
+                                    {
+                                        <strong>@item.Terminal5 => </strong>
+                                        <input type="hidden" value="@item.Terminal5" name="endCity" />
+                                    }
+                                    else
+                                    {
+                                        <p>@item.Terminal5 =></p>
+                                    }
+                                </li>
+                            }
+                            <li class="list-group-item">
+                                @if (ViewBag.toWhere == item.LastTerminal)
+                                {
+                                    <strong>@item.LastTerminal  </strong>
+                                    <input type="hidden" value="@item.LastTerminal" name="endCity" />
+                                }
+                                else
+                                {
+                                    <p>@item.LastTerminal </p>
+                                }
+                            </li>
+                        </ul>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Select Seat</button>
+                </div>
             </div>
-
-        </div>
-         }
-    
-        </form>
-
+        }
+    </form>
 </div>
 

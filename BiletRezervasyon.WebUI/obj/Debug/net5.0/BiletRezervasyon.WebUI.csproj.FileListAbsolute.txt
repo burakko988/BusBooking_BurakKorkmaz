@@ -92,7 +92,6 @@ C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webu
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.runtimeconfig.json
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.runtimeconfig.dev.json
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.dll
-C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\ref\BiletRezervasyon.WebUI.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.pdb
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.Views.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\bin\Debug\net5.0\BiletRezervasyon.WebUI.Views.pdb
@@ -172,3 +171,4 @@ C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webu
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\obj\Debug\net5.0\ref\BiletRezervasyon.WebUI.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\obj\Debug\net5.0\BiletRezervasyon.WebUI.pdb
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\biletrezervasyon.webui\obj\Debug\net5.0\BiletRezervasyon.WebUI.genruntimeconfig.cache
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.WebUI\obj\Debug\net5.0\refint\BiletRezervasyon.WebUI.dll

@@ -20,7 +20,6 @@ C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Data.runtimeconfig.json
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Data.runtimeconfig.dev.json
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Data.dll
-C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\ref\BiletRezervasyon.Data.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Data.pdb
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Entities.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\bin\Debug\net5.0\BiletRezervasyon.Entities.pdb
@@ -34,3 +33,4 @@ C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\obj\Debug\net5.0\ref\BiletRezervasyon.Data.dll
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\obj\Debug\net5.0\BiletRezervasyon.Data.pdb
 C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\obj\Debug\net5.0\BiletRezervasyon.Data.genruntimeconfig.cache
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Data\obj\Debug\net5.0\refint\BiletRezervasyon.Data.dll

@@ -1,0 +1,17 @@
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Business.deps.json
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Business.dll
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Business.pdb
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Data.dll
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Entities.dll
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Data.pdb
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\bin\relase\net5.0\BiletRezervasyon.Entities.pdb
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.csproj.AssemblyReference.cache
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.AssemblyInfoInputs.cache
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.AssemblyInfo.cs
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.csproj.CoreCompileInputs.cache
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.csproj.CopyComplete
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.dll
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\refint\BiletRezervasyon.Business.dll
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\BiletRezervasyon.Business.pdb
+C:\Users\korkk\OneDrive\Masaüstü\BusBooking_BurakKorkmaz\BiletRezervasyon.Business\obj\relase\net5.0\ref\BiletRezervasyon.Business.dll
